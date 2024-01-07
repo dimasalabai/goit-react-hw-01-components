@@ -1,12 +1,12 @@
 // import clsx from 'clsx'
-// import css from './Card.module.css'
+
 import { Container, Description, Stats, StatsItem } from './Profile.styled'
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
 	return (
 		<Container>
-			<Description class="description">
-				<img src={avatar} alt="User avatar" class="avatar" />
+			<Description>
+				<img src={avatar} alt="User avatar" />
 				<p>{username}</p>
 				<p>@{tag}</p>
 				<p>{location}</p>
@@ -14,16 +14,16 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
 
 			<Stats>
 				<StatsItem>
-					<span class="label">Followers</span>
-					<span class="quantity">{stats.followers}</span>
+					<span>Followers</span>
+					<span>{stats.followers}</span>
 				</StatsItem>
 				<StatsItem>
-					<span class="label">Views</span>
-					<span class="quantity">{stats.views}</span>
+					<span>Views</span>
+					<span>{stats.views}</span>
 				</StatsItem>
 				<StatsItem>
-					<span class="label">Likes</span>
-					<span class="quantity">{stats.likes}</span>
+					<span>Likes</span>
+					<span>{stats.likes}</span>
 				</StatsItem>
 			</Stats>
 		</Container>

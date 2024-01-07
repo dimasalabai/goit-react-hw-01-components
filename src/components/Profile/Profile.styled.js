@@ -33,6 +33,9 @@ export const Description = styled.div`
 			font-size: 20px;
 			font-weight: 500;
 		}
+		&:last-child {
+			font-weight: 500;
+		}
 	}
 `
 
@@ -45,6 +48,7 @@ export const Stats = styled.ul`
 export const StatsItem = styled.li`
 	flex: 0 1 33.33%;
 	padding: 10px 0px;
+	border: 1px solid #4e4e4e;
 
 	span {
 		display: block;
